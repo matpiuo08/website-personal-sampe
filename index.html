@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NN Hijab - Koleksi Hijab Elegan</title>
+    <title>NN Hijab - Koleksi Busana Muslimah Elegan</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -183,21 +183,25 @@
             </div>
 
             <!-- Form inputan -->
-            <form action="">
-                <div class="input-grup">
-                    <i data-feather="user"></i>
-                    <input type="text" placeholder="Nama">
-                </div>
-                <div class="input-grup">
-                    <i data-feather="mail"></i> 
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="input-grup">
-                    <i data-feather="phone"></i>
-                    <input type="text" placeholder="No HP">
-                </div>
-                <button type="submit" class="btn">Kirim Pesan</button>
-            </form>
+<form id="contact-form">
+    <div class="input-grup">
+        <i data-feather="user"></i>
+        <input type="text" id="contact-name" placeholder="Nama" required>
+    </div>
+    <div class="input-grup">
+        <i data-feather="mail"></i> 
+        <input type="email" id="contact-email" placeholder="Email" required>
+    </div>
+    <div class="input-grup">
+        <i data-feather="phone"></i>
+        <input type="text" id="contact-phone" placeholder="No HP" required>
+    </div>
+    <div class="input-grup">
+        <i data-feather="map-pin"></i>
+        <input type="text" id="contact-address" placeholder="Alamat Rumah / Pengiriman" required>
+    </div>
+    <button type="submit" class="btn">Kirim Pesan</button>
+</form>
         </div>
     </section>
     <!-- Contact Section end -->
