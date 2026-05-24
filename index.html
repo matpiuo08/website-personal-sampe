@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NN Hijab - Koleksi Busana Muslimah Elegan</title>
+    <title>NN Hijab - Koleksi Hijab Elegan</title>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Mr+Dafoe&display=swap" rel="stylesheet">
   
-    <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
     
-    <!-- My Style -->
+    <script 
+        type="text/javascript"
+        src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="Mid-client-l9fCw2vrZLJXL9Rx">
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navbar Start -->
     <nav class="navbar">
         <a href="#" class="navbar-logo">NN<span> Hijab</span></a>
 
@@ -35,28 +36,21 @@
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
         </div>
     </nav>
-    <!-- Navbar End -->
 
-    <!-- Search Form Start -->
     <div class="search-form">
         <input type="search" id="search-input" placeholder="Cari produk di sini...">
         <label for="search-input"><i data-feather="search"></i></label>
     </div>
-    <!-- Search Form End -->
 
-    <!-- Shopping Cart Start -->
     <div class="shopping-cart">
-        <div class="cart-items-container">
-        </div>
+        <div class="cart-items-container"></div>
         
         <div class="cart-total">
             <h4>Total: <span id="total-price-display">IDR 0</span></h4>
             <a href="#" class="checkout-btn">Checkout Sekarang</a>
         </div>
     </div>
-    <!-- Shopping Cart End -->
 
-    <!-- Hero Section start -->
     <section class="hero" id="home">
         <div class="content">
             <h1>Selamat Datang di Website</h1>
@@ -65,9 +59,7 @@
             <a href="#products" class="cta">Lihat Produk</a>
         </div>
     </section>
-    <!-- Hero Section end -->
 
-    <!-- About Section start -->
     <section id="about" class="about">
         <h2><span>Tentang</span> Kami</h2>
         <div class="row">
@@ -77,17 +69,14 @@
             <div class="content">
                 <h3>Kualitas dan Elegansi dalam Busana</h3>
                 <p>NN Hijab adalah brand fashion muslimah yang berkomitmen untuk memberikan kualitas terbaik di setiap jahitan. Kami memahami bahwa kenyamanan adalah kunci utama dalam berpakaian, terutama bagi Anda yang aktif sepanjang hari.</p>
-                <p>Dengan berbagai pilihan warna dan motif yang up-to-date, koleksi kami dirancang untuk mendukung penampilan Anda agar tetap stylish, profesional, dan menawan tanpa meninggalkan nilai-nilai kesantunan.</p>
+                <p>With berbagai pilihan warna dan motif yang up-to-date, koleksi kami dirancang untuk mendukung penampilan Anda agar tetap stylish, profesional, dan menawan tanpa meninggalkan nilai-nilai kesantunan.</p>
             </div>
         </div>
     </section>
-    <!-- About Section end -->
 
-    <!--Products Section start-->
     <section id="products" class="products">
         <h2><span>Produk</span> Kami</h2>
         
-        <!-- Tombol Filter Kategori -->
         <div class="products-categories">
             <button class="category-btn active" data-filter="all">Semua</button>
             <button class="category-btn" data-filter="hijab">Hijab</button>
@@ -95,13 +84,9 @@
         </div>
         
         <div class="row">
-            <!-- TOMBOL PANAH PREVIOUS -->
             <button id="prev-slide-btn" class="slider-arrow-btn"><i data-feather="chevron-left"></i></button>
 
-            <!-- Pembungkus Slider Utama -->
             <div class="products-slider-container">
-                
-                <!-- Produk 1 (Hijab) -->
                 <div class="products-card" data-category="hijab">
                     <div class="products-img-container">
                         <img src="img/products/1.png" alt="Pashmina Silk" class="products-card-img">
@@ -113,7 +98,6 @@
                     </button>
                 </div>
 
-                <!-- Produk 2 (Hijab) -->
                 <div class="products-card" data-category="hijab">
                     <div class="products-img-container">
                         <img src="img/products/2.jpeg" alt="Hijab Segi Empat Voal" class="products-card-img">
@@ -125,7 +109,6 @@
                     </button>
                 </div>
 
-                <!-- Produk 3 (Hijab) -->
                 <div class="products-card" data-category="hijab">
                     <div class="products-img-container">
                         <img src="img/products/1.png" alt="Hijab Bella Square" class="products-card-img">
@@ -137,7 +120,6 @@
                     </button>
                 </div>
 
-                <!-- Produk 4 (Gamis) -->
                 <div class="products-card" data-category="gamis">
                     <div class="products-img-container">
                         <img src="img/products/1.png" alt="Gamis Silk Premium" class="products-card-img">
@@ -149,7 +131,6 @@
                     </button>
                 </div>
 
-                <!-- Produk 5 (Gamis) -->
                 <div class="products-card" data-category="gamis">
                     <div class="products-img-container">
                         <img src="img/products/2.jpeg" alt="Gamis Crinkle Airflow" class="products-card-img">
@@ -160,56 +141,44 @@
                         <i data-feather="shopping-cart"></i> Tambah Keranjang
                     </button>
                 </div>
-
-            </div> <!-- /products-slider-container -->
-
-            <!-- TOMBOL PANAH NEXT -->
-            <button id="next-slide-btn" class="slider-arrow-btn"><i data-feather="chevron-right"></i></button>
+            </div> <button id="next-slide-btn" class="slider-arrow-btn"><i data-feather="chevron-right"></i></button>
         </div>
     </section>
-    <!--Products Section end-->
 
-    <!-- Contact Section start -->
     <section id="contact" class="contact">
-        <h2><span>Kontak</span> Kami</h2>
-        <p class="contact-desc">Silakan hubungi kami atau kunjungi toko kami langsung melalui peta di bawah ini.</p>
+        <h2><span>Konfirmasi</span> Pembayaran</h2>
+        <p class="contact-desc">Sudah transfer atau membayar via Midtrans? Isi form di bawah ini untuk konfirmasi instan ke WhatsApp admin.</p>
         
         <div class="row">
-            <!-- Lokasi Google Maps -->
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2417.0428953573146!2d122.34923155182113!3d0.5279581114752199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3279aba5de32dfd9%3A0x16ad6b2cfb469f6e!2sNN%20Hijab%20Tilamuta!5e1!3m2!1sid!2sid!4v1777723718305!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.649371263001!2d122.34872778219557!3d0.5272790528009447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3279aba5de32dfd9%3A0x16ad6b2cfb469f6e!2sNN%20Hijab%20Tilamuta!5e0!3m2!1sid!2sid!4v1779643447789!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <!-- Form inputan -->
-<form id="contact-form">
-    <div class="input-grup">
-        <i data-feather="user"></i>
-        <input type="text" id="contact-name" placeholder="Nama" required>
-    </div>
-    <div class="input-grup">
-        <i data-feather="mail"></i> 
-        <input type="email" id="contact-email" placeholder="Email" required>
-    </div>
-    <div class="input-grup">
-        <i data-feather="phone"></i>
-        <input type="text" id="contact-phone" placeholder="No HP" required>
-    </div>
-    <div class="input-grup">
-        <i data-feather="map-pin"></i>
-        <input type="text" id="contact-address" placeholder="Alamat Rumah / Pengiriman" required>
-    </div>
-    <button type="submit" class="btn">Kirim Pesan</button>
-</form>
+            <form action="">
+                <div class="input-grup">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="Nama Pembeli" required>
+                </div>
+                <div class="input-grup">
+                    <i data-feather="mail"></i> 
+                    <input type="email" placeholder="Email Anda">
+                </div>
+                <div class="input-grup">
+                    <i data-feather="phone"></i>
+                    <input type="text" placeholder="No HP / WhatsApp" required>
+                </div>
+                <div class="input-grup">
+                    <i data-feather="map-pin"></i>
+                    <input type="text" placeholder="Alamat Anda">
+                </div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
         </div>
     </section>
-    <!-- Contact Section end -->
 
-    <!-- Feather Icons Activation -->
     <script>
         feather.replace();
     </script> 
-
-    <!-- My JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
