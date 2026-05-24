@@ -212,7 +212,6 @@ body {
 }
 
 /* Products Section & Slider Container */
-/* Perbaikan: Lebar row diperkecil ke 44rem agar panah melekat pas di kanan-kiri satu produk tunggal */
 .products .row {
   position: relative; 
   display: flex;
@@ -254,7 +253,6 @@ body {
 }
 
 /* Wadah Penggeser Slide */
-/* Perbaikan: max-width diubah ke 30rem agar membatasi pandangan hanya memuat 1 produk (28rem + padding) */
 .products .products-slider-container {
   display: flex;
   justify-content: safe center; 
@@ -264,7 +262,7 @@ body {
   padding: 1.5rem 1rem;
   width: 100%;
   max-width: 30rem; 
-  scroll-snap-type: x mandatory; /* Diaktifkan kembali karena 1-product view sangat stabil dengan snap */
+  scroll-snap-type: x mandatory;
   -ms-overflow-style: none;  
   scrollbar-width: none;  
 }
@@ -281,11 +279,13 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 1.5rem;
   border-radius: 1rem;
-  transition: 0.3s ease;
   border: 1px solid transparent;
   flex: 0 0 28rem; 
   max-width: 28rem;
-  scroll-snap-align: center; /* Diubah ke center agar kartu terkunci tepat di tengah bingkai */
+  scroll-snap-align: center;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease; 
 }
 
 .products .row .products-card:hover {
@@ -550,6 +550,12 @@ body {
   .contact .row .map {
     height: 300px;
   }
+
+  /* Optimalisasi Keranjang saat dibuka di HP */
+  .shopping-cart {
+    max-width: 100% !important;
+    padding-top: 9rem !important;
+  }
 }
 
 /* ---- SEARCH FORM ---- */
@@ -594,16 +600,16 @@ body {
 }
 
 
-/* ---- SHOPPING CART SIDEBAR ---- */
+/* ---- SHOPPING CART SIDEBAR (FIXED DESKTOP VIEW) ---- */
 .shopping-cart {
   position: fixed;
   top: 0;
   right: -100%;
   height: 100vh;
   width: 100%;
-  max-width: 100%;
+  max-width: 42rem; /* FIXED: Di desktop tidak menutupi full layar, hanya membuka sidebar di kanan */
   background-color: #2d2d2d;
-  padding: 10rem 2rem 2rem;
+  padding: 8rem 2rem 2rem; 
   z-index: 9998;
   border-left: 1px solid #000;
   display: flex;
